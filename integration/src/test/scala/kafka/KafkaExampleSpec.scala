@@ -1,7 +1,6 @@
-package database
+package kafka
 
 import com.dimafeng.testcontainers.KafkaContainer
-import domain.PortDetails
 import io.github.scottweaver.zio.testcontainers.kafka.ZKafkaContainer
 import io.github.scottweaver.zio.testcontainers.kafka.ZKafkaContainer.Settings
 
@@ -17,8 +16,7 @@ object KafkaExampleSpec extends ZIOSpecDefault {
         for {
           settings  <- ZIO.service[Settings]
           container <- ZKafkaContainer.makeContainer(settings)
-//          _ = container.container
-          _ <- ZIO.logInfo(s"running test ${container.bootstrapServers}")
+          _ <- ZIO.logInfo(s"running test container ${container.bootstrapServers}")
         } yield assertTrue(true)
       }.provide(
         ZKafkaContainer.Settings.default,
