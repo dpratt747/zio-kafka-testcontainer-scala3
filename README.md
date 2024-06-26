@@ -1,7 +1,6 @@
 Libraries Used:
 * [ZIO 2](https://zio.dev/)
-* [ZIO-JDBC](https://github.com/zio/zio-jdbc)
-* [Testcontainers-Scala](https://github.com/testcontainers/testcontainers-scala)
+* [ZIO-TestContainers-Kafka](https://github.com/scottweaver/testcontainers-for-zio?tab=readme-ov-file#kafka)
 
 
 -----

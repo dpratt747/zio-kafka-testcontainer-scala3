@@ -3,9 +3,8 @@ ThisBuild / version := "0.1.0-SNAPSHOT"
 ThisBuild / organization := "com.example"
 ThisBuild / organizationName := "example"
 
-lazy val zioVersion = "2.1.3"
+lazy val zioVersion = "2.1.4"
 lazy val sttpVersion = "3.9.7"
-lazy val testContainerScalaVersion = "0.39.6"
 lazy val testContainerZIOScalaVersion = "0.10.0"
 lazy val zioKafkaVersion = "2.7.5"
 
